@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour {
 		//float moveVertical = Input.GetAxis ("Vertical");
 
 		float moveHorizontal = Input.acceleration.x;
-		float moveVertical = Input.acceleration.y;
+		float moveVertical = 0f;// Input.acceleration.y;
 
 		Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 		rb.AddForce(movement * speed);
