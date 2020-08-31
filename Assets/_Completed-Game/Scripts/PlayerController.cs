@@ -65,11 +65,16 @@ public class PlayerController : MonoBehaviour {
 		//float moveHorizontal = Input.GetAxis ("Horizontal");
 		//float moveVertical = Input.GetAxis ("Vertical");
 
+		//Player horizontal movement
 		float moveHorizontal = Input.acceleration.x;
 		float moveVertical = 0f;// Input.acceleration.y;
-
 		Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 		rb.AddForce(movement * speed);
+
+		//Player default forward movement
+		moveVertical = 10f;
+		movement = new Vector3(0, 0, moveVertical);
+		rb.AddForce(movement);
 
 		//Debug
 		accelerometer = Input.acceleration;
