@@ -5,6 +5,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 	
 	public float speed;
+	public float forwardSpeed;
 	public Text countText;
 	public Text winText;
 	[SerializeField] private Transform spawnPoint;
@@ -72,7 +73,7 @@ public class PlayerController : MonoBehaviour {
 		rb.AddForce(movement * speed);
 
 		//Player default forward movement
-		moveVertical = 10f;
+		moveVertical = forwardSpeed;
 		movement = new Vector3(0, 0, moveVertical);
 		rb.AddForce(movement);
 

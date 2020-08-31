@@ -451,6 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 150
+  forwardSpeed: 10
   countText: {fileID: 2023482906}
   winText: {fileID: 893736720}
   spawnPoint: {fileID: 1982366791}
@@ -9776,7 +9777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &799162419
 Transform:
   m_ObjectHideFlags: 0
